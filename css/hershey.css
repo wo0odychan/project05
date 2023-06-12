@@ -184,7 +184,7 @@
 
 .main_visual .itm03 figure {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -211,3 +211,7 @@
     border: 2px solid #fff;
     padding: 3px 8px 2px 12px;
 }
+
+
+.main_content {
+padding: 100px 0;}
