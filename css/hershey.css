@@ -1,0 +1,213 @@
+.header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    z-index: 999;
+}
+
+.header.on {
+    transition: 0.5s;
+}
+
+.header.on .sub {
+    top: 60px;
+}
+
+.header .header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 30px;
+}
+
+.header.on .header_wrap {
+    height: 80px;
+    transition: 0.5s;
+}
+
+.gnb>ul {
+    display: flex;
+    gap: 50px;
+}
+
+.gnb ul>li {
+    position: relative;
+}
+
+.gnb a {
+    display: block;
+    white-space: nowrap;
+
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.gnb ul>li:hover>a {
+    color: #8a0020;
+}
+
+.header .sub {
+    height: 0;
+    overflow: hidden;
+
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 999;
+    text-align: center;
+    width: 100px;
+    line-height: 35px;
+    transition: 0.5s;
+    margin: 10px 0 0 0;
+}
+
+.header .gnb:hover>ul>li .sub {
+    height: 200px;
+
+}
+
+.header .sub>li>a {
+    font-size: 15px;
+}
+
+.header .sub>li:hover>a {
+    border-bottom: 1px solid #8a0020;
+}
+
+.header .gnb::before {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border-top: 1xp solid transparent;
+    background: #ffffffad;
+    z-index: 999;
+
+    transition: 0.5s;
+}
+
+.header .gnb:hover::before {
+    height: 220px;
+}
+
+.header .header_wrap .sns {
+    display: flex;
+    gap: 15px;
+}
+
+.header .header_wrap .sns li>a {
+    font-size: 20px;
+    color: #8a0020;
+}
+
+.main_visual {
+    position: relative;
+    height: calc(100vh - 101px);
+    overflow: hidden;
+}
+
+.main_visual .itm {
+    position: relative;
+    min-height: 1000px;
+}
+
+.main_visual .itm01 {
+    background: url(../images/main01.JPG) no-repeat center center/cover;
+}
+
+.main_visual .itm02 {
+    background: url(../images/main02.JPG)no-repeat center center/cover;
+}
+
+.main_visual .itm03 {
+    background: url(../images/main03.JPG)no-repeat center center/cover;
+}
+
+.main_visual .itm01 figure {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translate(0, -50%);
+}
+
+.main_visual .itm01 strong {
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px 0 3px 0;
+}
+
+.main_visual .itm01 p {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 0 30px 0;
+}
+
+.main_visual .itm01 a {
+    font-size: 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 3px 8px 2px 12px;
+}
+
+.main_visual .itm02 figure {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main_visual .itm02 strong {
+    display: block;
+    color: #3f000f;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.main_visual .itm02 a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #3f000f;
+    border: 2px solid #3f000f;
+    padding: 3px 8px 2px 12px;
+}
+
+.main_visual .itm03 figure {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main_visual .itm03 strong {
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0 5px 0;
+}
+
+.main_visual .itm03 p {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 0 30px 0;
+}
+
+.main_visual .itm03 a {
+    font-size: 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 3px 8px 2px 12px;
+}
