@@ -26,4 +26,12 @@ $(function () {
         $('.main_slide').slick('slickGoTo', idx);
     });
 
+    $('.history_menu li').on('click', function (e) {
+        e.preventDefault();
+        let idx = $(this).index();
+        $(this).addClass('on').siblings().removeClass('on');
+        $('.history_content li').eq(idx).addClass('on').siblings().removeClass('on');
+    });
+
+
 })
