@@ -309,7 +309,7 @@
 .main_content .no02 {
     opacity: 0;
     transform: translate(0, 100%);
-    transition: 3s 1s;
+    transition: 2s 1s;
 }
 
 .main_content.on .no02 {
